@@ -1,22 +1,24 @@
-w, h = 1400, 1400
+w, h = 2400, 2400
 
+# Number of birds
+grid_x = 9
+grid_y = 9
 
-feet_length = 40
-
-colors = [(189, 208, 196), (154,183,211), (245,210,211), (247,225,211), (223,204,241)]
-bc = (255, 255, 255)
-
-
-grid_x = 5
-grid_y = 5
-
+# The birds will draw inside this rectangle
 grid_x_pixels = .8 * w
 grid_y_pixels = .8 * h
 
+# Distance between the birds
 sep_x = grid_x_pixels / (grid_x - 1)
 sep_y = grid_y_pixels / (grid_y - 1)
 
+# Background Color
+bc = (255, 255, 255)
+
 # Global bird variables
+
+colors = [(189, 208, 196), (154,183,211), (245,210,211), (247,225,211), (223,204,241)]
+feet_length = 40
 body_height = 100
 line_thickness = 7
 
@@ -31,6 +33,7 @@ max_shape_lines = 5
 def get_random_element(l):
     return l[int(random(len(l)))]
 
+# Adds shading to some of the randomly drawn triangles
 def draw_lines(point_list):
 
     p1 = point_list.pop(point_list.index(get_random_element(point_list)))
@@ -230,4 +233,4 @@ def setup():
         current_x += sep_x
             
             
-    save("Examples/birds.png")
+    save("Examples/9x9-2.png")
