@@ -11,4 +11,4 @@ Other links:
 
 All of these projects are available with the intention that other people will enjoy and learn from them. 
 
-<p align="center"><img src="https://github.com/erdavids/Birds-of-a-Feather/blob/master/Examples/9x9.png"></p>
+<p align="center"><img src="https://github.com/erdavids/Birds-of-a-Feather/blob/master/Favorites/9x9.png"></p>
