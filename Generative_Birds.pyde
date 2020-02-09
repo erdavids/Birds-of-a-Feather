@@ -1,8 +1,8 @@
-w, h = 2400, 2400
+w, h = 1400, 1400
 
 # Number of birds
-grid_x = 9
-grid_y = 9
+grid_x = 5
+grid_y = 5
 
 # The birds will draw inside this rectangle
 grid_x_pixels = .8 * w
@@ -232,5 +232,5 @@ def setup():
         current_y = h/2.0 - grid_y_pixels/2.0 + body_height
         current_x += sep_x
             
-            
-    save("Examples/9x9-2.png")
+    seed = str(int(random(10000)))
+    save("Examples/" + str(grid_x) + "-" + str(grid_y) + "-s-" + seed + ".png")
